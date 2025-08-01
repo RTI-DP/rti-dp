@@ -126,6 +126,12 @@ class DiffusionUnetLowdimRTIPolicy(BaseLowdimPolicy):
         scheduler = self.noise_scheduler
 
         if not self.initial_guess:
+            a, b, c = condition_data.shape
+            noise = torch.randn(
+                size=[a, b-1, c],
+                dtype=condition_data.dtype,
+                device=condition_data.device,
+                generator=generator)
             trajectory = torch.cat([self.guess[:,1:,:], self.guess[:,-1,:].unsqueeze(1)], dim=1)
         else:
             raise ValueError("Initial guess is not set, please run initial_sample first.")
