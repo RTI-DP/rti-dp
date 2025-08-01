@@ -15,7 +15,7 @@ Our contributions to the repo are:
 
 ## Evaulation with DDPM + RTI-DP
 ```shell
-python ../eval_rti.py --config-name=eval_diffusion_rti_lowdim_workspace.yaml 
+python ../eval_rti.py --config-name=eval_diffusion_rti_lowdim_nodiscrete_workspace.yaml
 ```
 
 ## Reproducing the results
