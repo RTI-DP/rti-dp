@@ -1,0 +1,16 @@
+checkpoint: data/dp_cp/transport_ph_lowdim/cp1.ckpt
+output_path: data/result/lowdim/transport_clip/
+output_dir: ${output_path}/${now:%Y.%m.%d-%H.%M.%S}
+n_action_steps: 1
+_target_: diffusion_policy.workspace.train_diffusion_unet_lowdim_rti_workspace.TrainDiffusionUnetLowdimRTIWorkspace
+
+policy:
+  _target_: diffusion_policy.policy.diffusion_unet_lowdim_rti_policy.DiffusionUnetLowdimRTIPolicy
+  noise_scheduler:
+    _target_: diffusers.schedulers.scheduling_ddpm.DDPMScheduler
+    num_train_timesteps: 100
+  steps: [29,26,23,20,18,16,14,12,10,9,8,7,6,5,4,3,2,1,0]
+  discrete_action:
+    has_discrete_action: true
+    scale: false
+    factor: 1.0

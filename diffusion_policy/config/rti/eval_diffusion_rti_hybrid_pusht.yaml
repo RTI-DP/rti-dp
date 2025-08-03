@@ -1,5 +1,5 @@
-checkpoint: data/dp_cp/can_ph_image/cp3.ckpt
-output_path: data/result/image/can_clip/
+checkpoint: data/dp_cp/pusht_image/cp1.ckpt
+output_path: data/result/image/pusht/
 output_dir: ${output_path}/${now:%Y.%m.%d-%H.%M.%S}
 n_action_steps: 1
 _target_: diffusion_policy.workspace.train_diffusion_unet_hybrid_rti_workspace.TrainDiffusionUnetHybridRTIWorkspace
@@ -9,8 +9,9 @@ policy:
   noise_scheduler:
     _target_: diffusers.schedulers.scheduling_ddpm.DDPMScheduler
     num_train_timesteps: 100
-  steps: [25,22,20,18,16,14,12,10,8,5,3,2,1,0]
+  steps: [3,1,0]
   discrete_action:
-    has_discrete_action: true
+    has_discrete_action: false
     scale: false
-    factor: 10.0
+    factor: 1.0
+

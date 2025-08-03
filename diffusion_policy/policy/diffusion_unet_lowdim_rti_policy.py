@@ -236,13 +236,10 @@ class DiffusionUnetLowdimRTIPolicy(BaseLowdimPolicy):
         a, b, c = nsample.shape
 
         if self.has_discrete_action:
-            if not self.scale:
-                """clipping"""
-                if c > 9:
-                    self.guess[:,:,-1] = torch.where(self.guess[:,:,-1]>0.0, 1.0/self.factor, -1.0/self.factor)
-                    if c == 20:
-                        self.guess[:,:,9] = torch.where(self.guess[:,:,9]>0.0, 1.0/self.factor, -1.0/self.factor)
-                """clipping"""
+            if c > 9:
+                self.guess[:,:,-1] = torch.where(self.guess[:,:,-1]>0.0, 1.0/self.factor, -1.0/self.factor)
+                if c == 20:
+                    self.guess[:,:,9] = torch.where(self.guess[:,:,9]>0.0, 1.0/self.factor, -1.0/self.factor)
 
             if c > 9:
                 action_pred[:,:,-1] = torch.where(action_pred[:,:,-1]>0.0, 1.0, -1.0)
