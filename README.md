@@ -9,7 +9,7 @@ See the [original Diffusion Policy repo](https://github.com/real-stanford/diffus
 ## Contributions
 
 Our contributions to the repo are:
-- We provide RTI-DP policies, in `policy/diffusion_unet_lowdim_rti_policy.py` and `policy/diffusion_unet_hyrbid_image_rti_policy.py` and workspace `workspace/train_diffusion_unet_lowdim_rti_workspace.py` and `workspace/train_diffusion_unet_hyrbid_rti_workspace.py`
+- We provide RTI-DP policies, in `policy/diffusion_unet_lowdim_rti_policy.py` and `policy/diffusion_unet_hyrbid_image_rti_policy.py`, and workspace in `workspace/train_diffusion_unet_lowdim_rti_workspace.py` and `workspace/train_diffusion_unet_hyrbid_rti_workspace.py`
 - We provide a script for dataset scaling in `rti/scale_robomimic_dataset.py`
 - We provide the evaluation file in `eval_rti.py` and config files in `config/rti`
 
