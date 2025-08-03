@@ -19,11 +19,11 @@ python ../eval_rti.py --config-name=eval_diffusion_rti_lowdim_workspace.yaml
 ```
 
 ## Reproducing the results
-`main` is a cleaner version but if you want to reproduce the result in the paper, switch to the branch `reproduce`. We provide all parameters in this branch.
+`main` is a cleaner version but if you want to reproduce the result in the paper, switch to the branch `reproduce`. All parameters are provided in this branch.
 
 We use the same checkpoints as provided by [diffusion policy](https://diffusion-policy.cs.columbia.edu/data/) for pusht, blockpush, and robomimic for RTI-DP-clip.
 
-For RTI-DP-scale, we provide checkpoints on huggingface.
+For RTI-DP-scale, we provide checkpoints on [huggingface](https://huggingface.co/duandaxia/rti-dp-scale).
 
 ## Citation
 
