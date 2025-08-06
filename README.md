@@ -25,6 +25,8 @@ We use the same checkpoints as provided by [diffusion policy](https://diffusion-
 
 For RTI-DP-scale, we provide checkpoints on [huggingface](https://huggingface.co/duandaxia/rti-dp-scale).
 
+Experiment videos are in [media](https://github.com/RTI-DP/rti-dp/tree/main/media).
+
 ## Citation
 
 If you find our work useful, please consider citing [our paper]():
