@@ -1,4 +1,6 @@
 # Real-Time Iteration Scheme for Diffusion Policy
+Yufei Duan, Hang Yin, Danica Kragic  
+[[Paper](https://arxiv.org/abs/2508.05396)] [[Project Page](https://rti-dp.github.io/)]
 
 Official codebase for ["Real-Time Iteration Scheme for Diffusion Policy"](). This repository is based on [Diffusion Policy](https://github.com/real-stanford/diffusion_policy). 
 
@@ -31,10 +33,14 @@ Experiment videos are in [media](https://github.com/RTI-DP/rti-dp/tree/main/medi
 
 If you find our work useful, please consider citing [our paper]():
 ```bibtex
-@misc{duan2025rtidp,
-    title={Real-Time Iteration Scheme for Diffusion Policy},
-    author={Yufei Duan and Hang Yin and Danica Kragic},
-    year={2025},
+@misc{duan2025realtimeiterationschemediffusion,
+      title={Real-Time Iteration Scheme for Diffusion Policy}, 
+      author={Yufei Duan and Hang Yin and Danica Kragic},
+      year={2025},
+      eprint={2508.05396},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2508.05396}, 
 }
 
 
